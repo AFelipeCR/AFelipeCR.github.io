@@ -21,7 +21,7 @@ class ApiService {
         this.http = http;
     }
     getIPAddress() {
-        return this.http.get('http://api.ipify.org/?format=json');
+        return this.http.get('https://api.ipify.org/?format=json');
     }
     getProducts() {
         return this.http.get(_environments_environment__WEBPACK_IMPORTED_MODULE_0__["environment"].apiEndpoint + `products`);
