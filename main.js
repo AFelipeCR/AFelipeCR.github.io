@@ -116,9 +116,8 @@ __webpack_require__.r(__webpack_exports__);
 
 const routes = [
     { path: '**', redirectTo: '' },
-    { path: '', redirectTo: 'products', pathMatch: 'full' },
     { path: 'payments', loadChildren: () => __webpack_require__.e(/*! import() | pages-payments-payments-module */ "pages-payments-payments-module").then(__webpack_require__.bind(null, /*! ./pages/payments/payments.module */ "cvkL")).then(m => m.PaymentsModule) },
-    { path: 'products', loadChildren: () => __webpack_require__.e(/*! import() | pages-products-products-module */ "pages-products-products-module").then(__webpack_require__.bind(null, /*! ./pages/products/products.module */ "a1ig")).then(m => m.ProductsModule) },
+    { path: '', loadChildren: () => __webpack_require__.e(/*! import() | pages-products-products-module */ "pages-products-products-module").then(__webpack_require__.bind(null, /*! ./pages/products/products.module */ "a1ig")).then(m => m.ProductsModule) },
 ];
 class AppRoutingModule {
 }
